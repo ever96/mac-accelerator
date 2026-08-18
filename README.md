@@ -15,3 +15,6 @@ Primer diseño físico de un circuito integrado digital procesado bajo un flujo 
 - `mac_unit.v`: RTL generado en Verilog.
 - `config.json`: Parámetros de diseño físico para OpenLane.
 - `sintesis.ys`: Script de síntesis lógica para Yosys."# mac-accelerator" 
+
+## 🖼️ Vista Física (GDSII Layout en KLayout)
+![Layout del Chip MAC en KLayout](chiplayout.png)
