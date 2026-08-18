@@ -1,0 +1,6 @@
+# Ocultar la fundición y los logs temporales
+pdk/
+runs/
+__pycache__/
+*.vcd
+*.blif

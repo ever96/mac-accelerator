@@ -1,0 +1,11 @@
+# 1. Leer el archivo de hardware que acabamos de generar
+read_verilog mac_unit.v
+
+# 2. Sintetizar la arquitectura automáticamente
+synth -auto-top
+
+# 3. Optimizar la lógica (eliminar cables sueltos o compuertas inútiles)
+opt
+
+# 4. Imprimir las estadísticas del hardware resultante
+stat
