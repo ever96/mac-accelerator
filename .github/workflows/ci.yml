@@ -1,0 +1,26 @@
+name: CI
+
+on:
+  push:
+  pull_request:
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Instalar dependencias
+        run: pip install -r requirements.txt
+      - name: Tests (DotUnit, arreglo sistólico, AccelTop)
+        run: python -m pytest -v
+      - name: Demo red neuronal en el acelerador
+        run: python demo/digits_demo.py 100
+      - name: Verilog + síntesis
+        run: python build.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: verilog
+          path: build/
