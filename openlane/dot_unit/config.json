@@ -1,0 +1,12 @@
+{
+    "DESIGN_NAME": "dot_unit",
+    "VERILOG_FILES": "dir::../../build/dot_unit.v",
+    "CLOCK_PORT": "clk",
+    "CLOCK_NET": "clk",
+    "CLOCK_PERIOD": 20,
+    "FP_SIZING": "relative",
+    "FP_CORE_UTIL": 40,
+    "PL_TARGET_DENSITY": 0.45,
+    "VDD_NETS": ["vccd1"],
+    "GND_NETS": ["vssd1"]
+}
